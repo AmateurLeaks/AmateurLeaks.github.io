@@ -167,7 +167,13 @@ Welcome Slider
 				<div class="block">
 					<h2></h2>
 
-          <video controlslist="nodownload" width="320" height="240" controls>
+          <video id="example_video_1" controlslist="nodownload" width="320" height="240" controls ads = '{"servers":[
+                           {"apiAddress": "https://syndication.realsrv.com/splash.php?idzone=4663222"}
+                         ],
+               "schedule":[
+                            {"position":"pre-roll"}
+                          ]
+              }'>
 
 
                         <source src="videoplayback.mp4" type="video/mp4">
@@ -181,9 +187,13 @@ Welcome Slider
 						</li>
 					</ul>
 				</div>
+        <span class="skipBtn">Skip</span>
+        <script>initAdsFor("example_video_1");</script>
 			</div>
+
 		</div>
 	</div>
+
 </section>
 
 <!--
